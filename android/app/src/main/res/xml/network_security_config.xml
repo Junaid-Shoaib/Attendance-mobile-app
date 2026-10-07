@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Allows cleartext (http) traffic to the local dev backend during
+     development. Remove the debug-overrides block (or tighten it to your
+     dev host only) before shipping a release build. -->
+<network-security-config>
+    <debug-overrides>
+        <trust-anchors>
+            <certificates src="system" />
+            <certificates src="user" />
+        </trust-anchors>
+    </debug-overrides>
+</network-security-config>
